@@ -1,0 +1,59 @@
+.partners-section {
+    text-align: center; /* Center the text and content */
+    padding: 40px;
+    background-color: #fff; /* White background */
+}
+
+.partners-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7931e; /* Orange color for the title */
+    margin-bottom: 10px;
+}
+
+.partners-subtitle {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+}
+
+.divider {
+    border: 0.5px solid #d9d9d9; /* Light grey divider */
+    margin-bottom: 40px;
+}
+
+.divider2 {
+    border: 0.5px solid #d9d9d9; /* Light grey divider */
+    margin-top: 40px;
+}
+
+
+.partners-logos {
+    display: flex;
+ 
+    justify-content: space-around; /* Space out items evenly */
+
+    gap: 20px; /* Space between logos */
+   
+}
+
+.partner-logo {
+    width: 60px; /* Adjust the size of the logos */
+    height: auto;
+}
+
+.start-now-btn {
+    background-color: #f7931e; /* Orange background */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s;
+}
+
+    .start-now-btn:hover {
+        background-color: #e6821d; /* Darker shade on hover */
+    }

@@ -1,0 +1,269 @@
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    color: black;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.integration:hover {
+    color: darkorange;
+}
+
+.logo {
+    width: 170px;
+    height: 50px;
+}
+
+.nav_li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+   
+}
+
+.nav_ul {
+    
+    align-content: center;
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust to perfectly center the button horizontally */
+}
+
+
+
+.container{
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.signin{
+    background-color: darkorange;
+    color: white;
+    padding: 12px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+}
+
+.solutionBox {
+    position: absolute;
+    width: 100%;
+    border: 1px solid transparent;
+    overflow:hidden;
+    display: none;
+    top: 50px;
+    border-radius: 15px; /* Adjust the value for more or less rounding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+.solutionContent {
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.solutionRow {
+    width: calc(50% - 30px);
+    line-height: 45px;
+    border: 1px solid #F2F2F2; /* Border style */
+    border-radius: 10px; /* Rounds the corners */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.solution_img {
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+}
+
+.solution-links {
+    list-style-type: none;
+   
+}
+
+
+.subitem {
+    font-weight: 600;
+    color: black;
+    line-height: 1.5;
+}
+
+.subitemcontainer {
+    display: flex;
+    gap: 20px;
+    margin-bottom:20px; /* Adjust spacing between items */
+    align-items: center;
+}
+
+.icon {
+    width: 25px;
+    object-fit: cover;
+    height: 25px;
+}
+
+
+.subitem:hover {
+    color: darkorange;
+}
+
+
+.navitem:hover .solutionBox {
+    display: block;
+}
+
+
+
+
+.navitem::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -30px; /* Decrease the bottom margin to prevent overlap */
+    background: transparent;
+    z-index: -1;
+}
+
+
+.navgroup{
+    display: flex;
+}
+
+.navicon{
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 3px;
+    width:15px;
+    height:15px;
+}
+
+
+.tutorialitem:hover .tutorialBox {
+    display: block;
+}
+
+
+.tutorialitem::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -30px; /* Decrease the bottom margin to prevent overlap */
+    background: transparent;
+    z-index: -1;
+}
+
+
+.tutorialBox {
+    position: absolute;
+    width: 60vw;
+    border: 1px solid transparent;
+    overflow: hidden;
+    display: none;
+    top: 50px;
+    border-radius: 15px; /* Adjust the value for more or less rounding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.tutorialRow {
+    width: calc(35% - 30px);
+    line-height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #F2F2F2; /* Border style */
+    border-radius: 10px; /* Rounds the corners */
+}
+
+.tutorial_item_header {
+    display: flex;
+}
+
+.tutotial_item_icon {
+    justify-content: space-between;
+    
+    margin-top: 11px;
+    margin-right: 5px;
+    width: 25px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+
+.tutorialitem {
+    display: flex;
+    justify-content: center; /* Centers the dropdown horizontally */
+    align-items: center; /* Aligns the items vertically */
+    
+}
+
+
+.tutotial_item_hearder_pic{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius:15px;
+    margin-bottom: 10px;
+
+}
+
+
+.subconatiner_subheader{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.subitem_p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+.inetgartion_item_hearder_pic {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    
+    border-radius: 15px;
+    
+}
+
+.integrationRow {
+    width: calc(50% - 10px);
+    border-radius: 10px; /* Rounds the corners */
+
+}
+
+.sizedBox{
+    height: 20px;
+}
+
+
+.subitem_initgreation {
+    font-weight: 500;
+    color: black;
+    line-height: 1.5;
+}
+
+.subitem_initgreation:hover {
+    color: darkorange;
+}

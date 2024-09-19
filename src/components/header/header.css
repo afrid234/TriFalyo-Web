@@ -1,0 +1,37 @@
+.carosoul{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.slidercontainer {
+    width: 100%;
+    position: relative;
+     /* Ensures the button stays over the image */
+}
+
+.overlay-button {
+    background-color: darkorange;
+    color: white;
+    padding: 12px 25px;
+    font-size: 20px;
+    
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+
+    position: absolute;
+    bottom: 10px; /* Place the button 10px from the bottom */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust to perfectly center the button horizontally */
+    padding: 10px 20px;
+    color: white;
+    margin-bottom: 50px;
+  
+    cursor: pointer;
+    z-index: 1; /* Ensures the button is above the image */
+}
+
+.overlay-button:hover {
+        background-color: rgba(0, 0, 0, 0.8); /* Darken the button on hover */
+    }

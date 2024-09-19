@@ -1,0 +1,65 @@
+.partner-restaurants {
+    display: flex;
+    justify-content: space-between; /* Align items side by side */
+    align-items: center; /* Align items vertically in the center */
+    padding: 40px; /* Add some padding */
+    background-color: #fff; /* Background color */
+}
+
+.text-content {
+    flex: 1; /* Make the text section take up 50% of the space */
+    padding-left: 5%; /* Add some spacing between the text and image */
+
+}
+
+.title {
+    color: #f47820; /* Orange color */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.features {
+    list-style: none; /* Remove bullets */
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+    .features li {
+        font-size: 18px;
+        margin-bottom: 10px; /* Add spacing between the list items */
+    }
+
+.image-content {
+    flex: 1; /* Make the image section take up 50% of the space */
+    position: relative; /* Allows us to place overlays */
+}
+
+.restaurant-image {
+    width: 100%; /* Make the image responsive */
+    border-radius: 15px; /* Optional: Rounded corners for the image */
+}
+
+.overlay-box1, .overlay-box2 {
+    position: absolute;
+    background-color: white; /* Background color for the overlay */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    font-size: 12px; /* Adjust font size for small overlays */
+}
+
+.overlay-box1 {
+    top: 20px; /* Positioning at the top of the image */
+    right: 20px; /* Align to the right */
+}
+
+.overlay-box2 {
+    bottom: 20px; /* Positioning at the bottom of the image */
+    left: 20px; /* Align to the left */
+}
