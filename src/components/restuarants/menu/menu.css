@@ -1,5 +1,5 @@
-.partner-restaurants {
-    display: flex;
+.partnermenu-restaurants {
+
     justify-content: space-between; /* Align items side by side */
     align-items: center; /* Align items vertically in the center */
     padding: 40px; /* Add some padding */
@@ -12,17 +12,7 @@
 
 }
 
-.title {
-    color: #f47820; /* Orange color */
-    font-size: 24px;
-    font-weight: bold;
-}
 
-.subtitle {
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 10px;
-}
 
 .features {
     list-style: none; /* Remove bullets */
@@ -30,10 +20,7 @@
     margin-top: 20px;
 }
 
-    .features li {
-        font-size: 18px;
-        margin-bottom: 10px; /* Add spacing between the list items */
-    }
+   
 
 .image-content {
     flex: 1; /* Make the image section take up 50% of the space */
@@ -62,4 +49,39 @@
 .overlay-box2 {
     bottom: 20px; /* Positioning at the bottom of the image */
     left: 20px; /* Align to the left */
+}
+
+
+.partnermenu-restaurants_mobile {
+    flex-direction: column;
+    justify-content: space-between; /* Align items side by side */
+    align-items: center; /* Align items vertically in the center */
+    padding: 40px; /* Add some padding */
+    background-color: #fff; /* Background color */
+}
+
+
+@media (min-width: 700px) {
+
+    .partnermenu-restaurants {
+        display: flex;
+    }
+
+    .partnermenu-restaurants_mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+
+
+    .partnermenu-restaurants {
+        display: none;
+    }
+
+    .partnermenu-restaurants_mobile {
+        display: flex;
+    }
+
+    
 }

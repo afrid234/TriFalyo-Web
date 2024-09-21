@@ -23,7 +23,8 @@ const App = () => {
           <PartnerRestaurants />
           <TechStack />
           <OurPartners />
-          <Footer/>
+          <Footer />
+
       </div>
   )
 }

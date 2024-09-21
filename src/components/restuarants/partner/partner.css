@@ -1,5 +1,4 @@
 .partner-restaurants {
-    display: flex;
     justify-content: space-between; /* Align items side by side */
     align-items: center; /* Align items vertically in the center */
     padding: 40px; /* Add some padding */
@@ -24,11 +23,7 @@
     margin-top: 10px;
 }
 
-.features {
-    list-style: none; /* Remove bullets */
-    padding-left: 0;
-    margin-top: 20px;
-}
+
 
     .features li {
         font-size: 18px;
@@ -62,4 +57,82 @@
 .overlay-box2 {
     bottom: 20px; /* Positioning at the bottom of the image */
     left: 20px; /* Align to the left */
+}
+
+
+.partner-restaurants_mobile {
+ 
+    flex-direction: column;
+    justify-content: space-between; /* Align items side by side */
+    align-items: center; /* Align items vertically in the center */
+    padding: 40px; /* Add some padding */
+    background-color: #fff; /* Background color */
+}
+
+
+/* mobile design responsive*/
+@media (min-width: 700px) {
+
+    .partner-restaurants{
+        display: flex;
+    }
+
+    .partner-restaurants_mobile {
+        display: none;
+    }
+
+
+    .title {
+        color: #f47820; /* Orange color */
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+
+        .features li {
+            font-size: 18px;
+            margin-bottom: 10px; /* Add spacing between the list items */
+        }
+
+}
+
+@media (max-width: 700px) {
+
+
+    .partner-restaurants {
+        display: none;
+    }
+
+    .partner-restaurants_mobile {
+        display: flex;
+    }
+
+    .text-content{
+        margin-top: 7vh;
+    }
+
+
+    .title {
+        color: #f47820; /* Orange color */
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+
+        .features li {
+            font-size: 18px;
+            margin-bottom: 10px; /* Add spacing between the list items */
+        }
 }

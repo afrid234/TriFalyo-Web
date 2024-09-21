@@ -15,7 +15,6 @@
 .tech-image {
     width: 100%;/* Make the image responsive */
     height: 600px;
-    
     object-fit: cover;
     border-radius: 15px; /* Optional: Rounded corners */
 }
@@ -44,3 +43,32 @@
         font-size: 16px;
         line-height: 1.5; /* Improve readability */
     }
+
+
+
+/* mobile design responsive*/
+@media (min-width: 700px) {
+
+    .tech-stack-container {
+        margin-top: 10vh;
+    }
+   
+}
+
+@media (max-width: 700px) {
+
+    .tech-stack-container {
+        flex-direction: column;
+
+    }
+
+    .image-container{
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 5vh;
+    }
+
+    .tech-image{
+        height: 50vh;
+    }
+}

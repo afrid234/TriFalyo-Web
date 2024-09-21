@@ -1,7 +1,6 @@
 .stats-section {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
+
     justify-content: space-around; /* Space out items evenly */
     padding: 20px 0; /* Add padding to the top and bottom */
     text-align: center; /* Center-align the text */
@@ -31,4 +30,48 @@
     font-size: 14px; /* Set a smaller font size for the description */
     color: #333; /* Set a darker color for the description */
     margin: 0;
+}
+
+
+/* mobile design responsive*/
+@media (min-width: 700px) {
+
+    .stats-section {
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+}
+
+@media (max-width: 700px) {
+
+
+    .stats-section {
+
+        margin-top: 50px;
+        margin-bottom: 10px;
+    
+    }
+
+    .stat-number {
+        font-size: 26px; /* Set a large font size for the number */
+        font-weight: bold; /* Make the number bold */
+        color: #f47820; /* Set the number color (orange in your example) */
+        margin: 0;
+    }
+
+    .stat-title {
+        font-size: 13px; /* Set the font size for the title */
+        font-weight: bold; /* Make the title bold */
+        margin: 10px 0; /* Add some space around the title */
+        color: #000; /* Set the title color */
+    }
+
+    .stat-description {
+        font-size: 10px; /* Set a smaller font size for the description */
+        color: #333; /* Set a darker color for the description */
+        margin: 0;
+    }
+    
 }
