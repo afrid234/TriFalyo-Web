@@ -1,0 +1,57 @@
+
+
+    
+
+.subpackage_all{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.subscriptionTitle {
+    margin-bottom: 2vh;
+}
+
+.subscriptionTitle h2 {
+        color: midnightblue;
+    }
+
+
+/* mobile design responsive*/
+@media (min-width: 700px) {
+
+    .subHeader h1 {
+        color: #1F1D2B;
+    }
+
+    .subHeader {
+        width: 100%;
+        align-content: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        display: flex; /* Enable Flexbox */
+        justify-content: center; /* Center items horizontally */
+        align-items: center;
+    }
+
+}
+
+/* mobile design responsive*/
+@media (max-width: 700px) {
+
+
+    .subHeader {
+        width: 100%;
+        align-content: center;
+        margin-top: 40%;
+        margin-bottom: 5%;
+        display: flex; /* Enable Flexbox */
+        justify-content: center; /* Center items horizontally */
+        align-items: center;
+    }
+
+    .subHeader h1 {
+        color: #1F1D2B;
+        font-size: 20px;
+        text-align: center;
+    }
+}

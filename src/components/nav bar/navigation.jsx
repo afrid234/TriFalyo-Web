@@ -16,8 +16,10 @@ import store_img from '../../assets/headers/storemangement.jpg'
 import menu from '../../assets/menu.png';
 import next from '../../assets/next.png';
 import cross from '../../assets/close.png';
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
-import {useState} from 'react'
+
 
 
 const Navbar = () => {
@@ -27,6 +29,12 @@ const Navbar = () => {
     // Function to toggle the drawer and icon
     const toggleDrawer = () => {
         setIsDrawerOpen(!isDrawerOpen);
+    };
+
+
+    const navigate = useNavigate();
+    const handle_Subscription_Click = () => {
+        navigate("/subscription"); // Navigate to the About page
     };
 
     return (
@@ -127,7 +135,7 @@ const Navbar = () => {
 
 
 
-                    <div className="nav_li">
+                    <div onClick={handle_Subscription_Click} className="nav_li">
                         Subscriptions
                     </div>
 
@@ -445,7 +453,7 @@ const Navbar = () => {
 
 
                     <li className="mobile_item">
-                        <div className="mobile_item_group">
+                        <div className="mobile_item_group" onClick={handle_Subscription_Click}>
 
                             <h1 >Subscription</h1>
 

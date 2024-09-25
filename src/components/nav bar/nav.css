@@ -54,6 +54,7 @@ nav{
 .container {
     padding-left: 2%;
     padding-right: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .signin{
