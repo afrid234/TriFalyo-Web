@@ -7,6 +7,40 @@ import right from '../../assets/logo/right.png'
 const SubHeader = () => {
     const [count, setCount] = useState(0)
 
+
+    // Define the function that will send the request and accept the packageId as a parameter
+    function handlePurchase(id) {
+        console.log("test+id");
+        // HTTP POST request using fetch
+        fetch("https://api.trifalyo.com/payment/create-checkout-session", { // Add port number if required
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ packageId: id }), // Passing package ID in the request body
+        })
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                console.log("Success:", data);
+                if (data.url) {
+                    // Redirect user to the returned URL
+                    window.location.href = data.url;
+                } else {
+                    console.error("No URL returned in the response");
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    }
+
+
+
     return (
         <div>
 
@@ -46,7 +80,7 @@ const SubHeader = () => {
                             </div>
 
                             <div className="purchase_group">
-                                <button className="purchase_btn">Get Started</button>
+                                <button onClick={handlePurchase("66d83df24cac2e078bbadd22")} className="purchase_btn">Get Started</button>
 
                             </div>
 
@@ -282,13 +316,13 @@ const SubHeader = () => {
                             <p>From <strong>USD 199</strong> /month</p>
                         </div>
                         <div class="cta-button">
-                            <a href="#" class="get-started-button">Get Started</a>
+                            <a onClick={() => handlePurchase("66d83df24cac2e078bbadd22")} class="get-started-button">Get Started</a>
                         </div>
 
 
                     </div>
 
-                    <a href="#" class="get-started-button_mobile">$199</a>
+                    <a onClick={() => handlePurchase("66d83df24cac2e078bbadd22")} class="get-started-button_mobile">$199</a>
 
                 </div>
 
