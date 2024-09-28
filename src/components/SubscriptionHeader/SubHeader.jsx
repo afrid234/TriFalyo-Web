@@ -80,7 +80,7 @@ const SubHeader = () => {
                             </div>
 
                             <div className="purchase_group">
-                                <button onClick={handlePurchase("66d83df24cac2e078bbadd22")} className="purchase_btn">Get Started</button>
+                                <button onClick={() => handlePurchase("66d83df24cac2e078bbadd22")} className="purchase_btn">Get Started</button>
 
                             </div>
 
@@ -159,7 +159,7 @@ const SubHeader = () => {
                             </div>
 
                             <div className="purchase_group">
-                                <button className="purchase_btn">Get Started</button>
+                                <button onClick={() => handlePurchase("66f7950385e3f5fef3545c80")} className="purchase_btn">Get Started</button>
 
                             </div>
 
@@ -238,7 +238,7 @@ const SubHeader = () => {
                             </div>
 
                             <div className="purchase_group">
-                                <button className="purchase_btn">Get Started</button>
+                                <button onClick={() => handlePurchase("66f7952e85e3f5fef3545c81")} className="purchase_btn">Get Started</button>
 
                             </div>
 
@@ -316,13 +316,13 @@ const SubHeader = () => {
                             <p>From <strong>USD 199</strong> /month</p>
                         </div>
                         <div class="cta-button">
-                            <a onClick={() => handlePurchase("66d83df24cac2e078bbadd22")} class="get-started-button">Get Started</a>
+                            <a onClick={() => handlePurchase("66f80031537654c89607dafd")} class="get-started-button">Get Started</a>
                         </div>
 
 
                     </div>
 
-                    <a onClick={() => handlePurchase("66d83df24cac2e078bbadd22")} class="get-started-button_mobile">$199</a>
+                    <a onClick={() => handlePurchase("66f80031537654c89607dafd")} class="get-started-button_mobile">$199</a>
 
                 </div>
 
@@ -342,13 +342,13 @@ const SubHeader = () => {
                             <p>From <strong>USD 199</strong> /month</p>
                         </div>
                         <div class="cta-button">
-                            <a href="#" class="get-started-button">Get Started</a>
+                            <a onClick={() => handlePurchase("66f80031537654c89607dafd")} class="get-started-button">Get Started</a>
                         </div>
 
 
                     </div>
 
-                    <a href="#" class="get-started-button_mobile">$199</a>
+                    <a onClick={() => handlePurchase("66f80031537654c89607dafd")} class="get-started-button_mobile">$199</a>
 
                 </div>
 
@@ -370,13 +370,13 @@ const SubHeader = () => {
                             <p>From <strong>USD 199</strong> /month</p>
                         </div>
                         <div class="cta-button">
-                            <a href="#" class="get-started-button">Get Started</a>
+                            <a onClick={() => handlePurchase("66f80031537654c89607dafd")} class="get-started-button">Get Started</a>
                         </div>
 
 
                     </div>
 
-                    <a href="#" class="get-started-button_mobile">$199</a>
+                    <a onClick={() => handlePurchase("66f80031537654c89607dafd")} class="get-started-button_mobile">$199</a>
 
                 </div>
 
@@ -397,13 +397,13 @@ const SubHeader = () => {
                             <p>From <strong>USD 199</strong> /month</p>
                         </div>
                         <div class="cta-button">
-                            <a href="#" class="get-started-button">Get Started</a>
+                            <a onClick={() => handlePurchase("66f80031537654c89607dafd")} class="get-started-button">Get Started</a>
                         </div>
 
 
                     </div>
 
-                    <a href="#" class="get-started-button_mobile">$199</a>
+                    <a onClick={() => handlePurchase("66f80031537654c89607dafd")} class="get-started-button_mobile">$199</a>
 
                 </div>
 
